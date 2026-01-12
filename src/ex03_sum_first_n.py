@@ -10,4 +10,9 @@ def sum_first_n(n: int) -> int:
     - Si n <= 0, devuelve 0.
     - Debe resolverse usando un bucle (for o while).
     """
-    raise NotImplementedError("Implementa sum_first_n(n)")
+    if n <= 0:
+        return 0
+    suma = 0
+    for i in range(1, n + 1):
+        suma += i
+    return suma
